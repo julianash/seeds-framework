@@ -7,7 +7,7 @@
 ## Evaluation Criteria
 
 | Criterion | Evaluation Question / Description |
-| :noons | :--- |
+| :--- | :--- |
 | **1. Relevance** | Does the record address a meaningful sustainability concern for the analyzed system, solution, or demand? |
 | **2. Role Adequacy** | Is the stakeholder role clearly identified, and is the concern appropriate to what this role can perceive, report, or validate? |
 | **3. Dimensional Alignment** | Are the selected SEEDS dimensions coherent with the sustainability concern and its expected effects? |
