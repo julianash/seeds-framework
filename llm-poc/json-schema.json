@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SEEDS-DR Schema",
+  "description": "Schema for SEEDS Sustainability Decision Records in Biomedical Software Engineering",
+  "type": "object",
+  "properties": {
+    "seeds_dr_id": {
+      "type": "string",
+      "description": "Unique identifier of the decision record (e.g., SEEDS-DR-001)"
+    },
+    "decision_context": {
+      "type": "string",
+      "description": "Context such as existing system assessment, digital health solution intake, or institutional software demand"
+    },
+    "system_or_solution": {
+      "type": "string",
+      "description": "Name or description of the digital health system or solution"
+    },
+    "stakeholder_role": {
+      "type": "string",
+      "description": "Role observing or reporting the concern (e.g., Patient, Healthcare Professional, Developer)"
+    },
+    "sustainability_concern": {
+      "type": "string",
+      "description": "Description of the problem, risk, or quality need related to sustainability"
+    },
+    "seeds_dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Individual", "Social", "Economic", "Technical", "Environmental"]
+      },
+      "description": "Associated sustainability dimensions"
+    },
+    "related_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Checklist items or subthemes supporting the interpretation"
+    },
+    "expected_effect": {
+      "type": "string",
+      "description": "Expected first, second, or third-order sustainability effect"
+    },
+    "derived_nfr_or_decision": {
+      "type": "string",
+      "description": "Non-functional requirement or architectural decision derived from the concern"
+    },
+    "acceptance_criterion": {
+      "type": "string",
+      "description": "Condition indicating whether the requirement has been addressed"
+    },
+    "verification_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Source or method used for testing, audits, or inspection"
+    },
+    "trade_offs": {
+      "type": "string",
+      "description": "Conflicts, dependencies, or tensions among dimensions"
+    },
+    "decision_status": {
+      "type": "string",
+      "enum": ["Requires human review", "Accept", "Reject", "Revise", "Defer", "Accept with conditions"],
+      "description": "Current status of the decision record"
+    },
+    "human_review_notes": {
+      "type": "string",
+      "description": "Reviewer notes, assumptions, or required expert judgment"
+    }
+  },
+  "required": [
+    "seeds_dr_id",
+    "decision_context",
+    "stakeholder_role",
+    "sustainability_concern",
+    "seeds_dimensions",
+    "derived_nfr_or_decision",
+    "decision_status"
+  ]
+}
