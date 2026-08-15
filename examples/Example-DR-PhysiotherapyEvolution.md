@@ -1,7 +1,7 @@
 # SEEDS Sustainability Decision Record (SEEDS-DR) - Example
 
 > **Context:** Example generated for an inpatient physiotherapy evolution system in a hospital setting.  
-> **Framework:** SEEDS (Sustainable Requirements Engineering in Digital Health Software)  
+> **Framework:** SEEDS (Sustainability in Biomedical Software Engineering)  
 > **Repository:** [seeds-framework](https://github.com/julianash/seeds-framework)
 
 ---
